@@ -1,0 +1,3 @@
+[submodule "logistic5"]
+	path = logistic5
+	url = https://github.com/dnafinder/logistic5
