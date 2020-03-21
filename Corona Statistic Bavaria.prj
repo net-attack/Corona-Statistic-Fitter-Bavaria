@@ -1,5 +1,5 @@
 <deployment-project plugin="plugin.ezdeploy" plugin-version="1.0">
-  <configuration build-checksum="3588763252" file="D:\Corona Statistic Bavaria.prj" location="D:\" name="Corona Statistic Bavaria" preferred-package-location="D:\Corona Statistic Bavaria\for_redistribution" preferred-package-type="package.type.exe" target="target.ezdeploy.standalone" target-name="Application Compiler">
+  <configuration build-checksum="2699042861" file="D:\repos\Corona-Statistic-Fitter-Bavaria\Corona Statistic Bavaria.prj" location="D:\repos\Corona-Statistic-Fitter-Bavaria" name="Corona Statistic Bavaria" preferred-package-location="D:\repos\Corona-Statistic-Fitter-Bavaria\Corona Statistic Bavaria\for_redistribution" preferred-package-type="package.type.exe" target="target.ezdeploy.standalone" target-name="Application Compiler">
     <param.appname>CoronaStatisticBavaria</param.appname>
     <param.icon>${PROJECT_ROOT}\Corona Statistic Bavaria_resources\icon.ico</param.icon>
     <param.icons>
@@ -14,7 +14,7 @@
     <param.company />
     <param.summary>Quelle: https://www.lgl.bayern.de/gesundheit/infektionsschutz/infektionskrankheiten_a_z/coronavirus/karte_coronavirus/index.htm</param.summary>
     <param.description />
-    <param.screenshot>${PROJECT_ROOT}\red-virus-7.jpg</param.screenshot>
+    <param.screenshot>${PROJECT_ROOT}\splash.jpg</param.screenshot>
     <param.guid />
     <param.installpath.string>\CoronaStatisticBavaria\</param.installpath.string>
     <param.installpath.combo>option.installpath.programfiles</param.installpath.combo>
@@ -81,15 +81,15 @@
       <file>${PROJECT_ROOT}\corona.m</file>
     </fileset.main>
     <fileset.resources>
-      <file>${PROJECT_ROOT}\L5P.m</file>
-      <file>${PROJECT_ROOT}\L5Pinv.m</file>
+      <file>${PROJECT_ROOT}\logistic5\L5P.m</file>
+      <file>${PROJECT_ROOT}\logistic5\L5Pinv.m</file>
     </fileset.resources>
     <fileset.package />
     <fileset.depfun />
     <build-deliverables>
-      <file location="${PROJECT_ROOT}\Corona Statistic Bavaria\for_testing" name="readme.txt" optional="true">D:\Corona Statistic Bavaria\for_testing\readme.txt</file>
-      <file location="${PROJECT_ROOT}\Corona Statistic Bavaria\for_testing" name="splash.png" optional="false">D:\Corona Statistic Bavaria\for_testing\splash.png</file>
-      <file location="${PROJECT_ROOT}\Corona Statistic Bavaria\for_testing" name="CoronaStatisticBavaria.exe" optional="false">D:\Corona Statistic Bavaria\for_testing\CoronaStatisticBavaria.exe</file>
+      <file location="${PROJECT_ROOT}\Corona Statistic Bavaria\for_testing" name="CoronaStatisticBavaria.exe" optional="false">D:\repos\Corona-Statistic-Fitter-Bavaria\Corona Statistic Bavaria\for_testing\CoronaStatisticBavaria.exe</file>
+      <file location="${PROJECT_ROOT}\Corona Statistic Bavaria\for_testing" name="splash.png" optional="false">D:\repos\Corona-Statistic-Fitter-Bavaria\Corona Statistic Bavaria\for_testing\splash.png</file>
+      <file location="${PROJECT_ROOT}\Corona Statistic Bavaria\for_testing" name="readme.txt" optional="true">D:\repos\Corona-Statistic-Fitter-Bavaria\Corona Statistic Bavaria\for_testing\readme.txt</file>
     </build-deliverables>
     <workflow />
     <matlab>

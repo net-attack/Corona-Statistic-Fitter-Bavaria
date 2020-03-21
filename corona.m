@@ -1,4 +1,5 @@
 function [x, days, values] = corona()
+    
     url = "https://www.lgl.bayern.de/gesundheit/infektionsschutz/infektionskrankheiten_a_z/coronavirus/karte_coronavirus/index.htm";
     [days, values] = getMeasurementFromWebpage(url);
     corona_day = values;
@@ -31,7 +32,7 @@ function [x, days, values] = corona()
 
     %Open Figure
     fig = figure(1);
-    set(fig, 'Name', 'untitled fit 1', 'Position', [0 0 1280 960] );
+    set(fig, 'Name', 'Overview the current trend in corona cases in bavaria', 'Position', [0 0 1280 960],'MenuBar', 'figure' );
 
     %Draw cases per day as bars
     bar( days(1:length(yData)), yData );
@@ -61,7 +62,7 @@ end
 
 
 function [days, values] = getMeasurementFromWebpage(url)
-    code = webread(url);
+     code = webread(url);
      expression = '((?<=<table id="tableFaelle">).*(?=<\/table>))';
      matches = regexp(code,expression,'match');
      values = [];
@@ -121,6 +122,7 @@ function f = fitting_expo(x, xData, yData)
 end
 
 function f = fitting_logistic(x, xData, yData)
+    addpath('/logistic5/L5P.m');
     [cf,G]=L5P(xData,yData);
     
     coef = coeffvalues(cf);

@@ -43,3 +43,11 @@
 /var/package/*
 !/var/package/*.xml
 
+Corona Statistic Bavaria/for_redistribution_files_only/*
+Corona Statistic Bavaria/for_testing/*
+Corona Statistic Bavaria/PackagingLog.html
+Corona Statistic Bavaria_resources/icon.ico
+Corona Statistic Bavaria_resources/icon_16.png
+Corona Statistic Bavaria_resources/icon_24.png
+Corona Statistic Bavaria_resources/icon_32.png
+Corona Statistic Bavaria_resources/icon_48.png
